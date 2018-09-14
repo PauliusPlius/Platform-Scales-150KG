@@ -3,6 +3,7 @@
 #include "BigNumbers.h"                    //modified BigNumbers library
 #include <HX711_ADC.h>
 
+
 #define SCALES_FACTOR -12500.0
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);     // initialize the interface pins
@@ -136,6 +137,7 @@ void loop()
   }//if
 
   showWeight = (weight - tareWeight) +0.003;
+
 
 ///-------------------------------------------------------------------------------------------
    int reading1 = digitalRead(button_1_Pin);       // read the state of the switch into a local variable
