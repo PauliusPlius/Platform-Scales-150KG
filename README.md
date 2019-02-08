@@ -9,4 +9,4 @@ Alphanumeric LCD Display BC2002A (HD44780 lib);
 HX711 24-Bit ADC;
 Power suply  5VDC;
 
-Sketch uses modified BigNumbers.h library and standard LiquidCrystal.h, HX711_ADC.h libraries. You need to download and instal HX711_ADC.h library before compiling sketch.
+Sketch uses modified BigNumbers.h library and standard LiquidCrystal.h, HX711_ADC.h libraries. You need to download and instal HX711_ADC.h and other libraries before compiling sketch.
