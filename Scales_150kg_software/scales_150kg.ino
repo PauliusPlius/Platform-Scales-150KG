@@ -1,3 +1,6 @@
+//----------------------------------------------------------------------------------------------------
+//------- version 0.1 ----------------------
+//--------2018-09-15--------------------------
 
 #include <LiquidCrystal.h>
 #include "BigNumbers.h"                    //modified BigNumbers library
@@ -15,7 +18,7 @@ HX711_ADC LoadCell(14, 15);                //HX711 constructor (dout pin, sck pi
 const int button_1_Pin = 7;                // the pin number of the pushbutton 1 pin
 const int button_2_Pin = 8;                // the pin number of the pushbutton 2 pin
 const int LCD_LED_Pin = 9;                 // the pin number of the LCD LED pwm pin
-const int ledPin = 13;                     // the pin number of the LED pin
+//const int ledPin = 13;                     // the pin number of the LED pin
 const int BuzzPin = 13;                    // the pin number of the buzzer
 
 int ledState = HIGH;                       // the current state of the output pin
@@ -39,11 +42,11 @@ float tareWeight = 0.0;
 float zeroWeight = 0.0;
 
 //--------------------------- SETUP --------------------------------------------------------
-
 void setup()
 {
+  
   pinMode(ledPin, OUTPUT);
-  //pinMode(LCD_LED_Pin, OUTPUT);
+  pinMode(LCD_LED_Pin, OUTPUT);
   pinMode(BuzzPin, OUTPUT);
   pinMode(button_1_Pin, INPUT_PULLUP);
   pinMode(button_2_Pin, INPUT_PULLUP);

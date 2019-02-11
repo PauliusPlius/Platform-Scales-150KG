@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Scales_150kg"
+Date "2019-02-11"
+Rev "v02"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "designed by MACROlab"
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5C60A98B
+P 4300 3150
+F 0 "A?" H 3950 4100 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" V 4300 3050 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4450 2200 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4300 2150 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4150 4300 4450
+Wire Wire Line
+	4400 4150 4400 4450
+Wire Wire Line
+	4400 4450 4300 4450
+Connection ~ 4300 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5C60BA42
+P 1400 2000
+F 0 "#PWR?" H 1400 1750 50  0001 C CNN
+F 1 "GND" H 1405 1827 50  0000 C CNN
+F 2 "" H 1400 2000 50  0001 C CNN
+F 3 "" H 1400 2000 50  0001 C CNN
+	1    1400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C60BA6F
+P 4300 4800
+F 0 "#PWR?" H 4300 4550 50  0001 C CNN
+F 1 "GND" H 4305 4627 50  0000 C CNN
+F 2 "" H 4300 4800 50  0001 C CNN
+F 3 "" H 4300 4800 50  0001 C CNN
+	1    4300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4450 4300 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 5C60BD00
+P 4500 2000
+F 0 "#PWR?" H 4500 1850 50  0001 C CNN
+F 1 "+5V" H 4515 2173 50  0000 C CNN
+F 2 "" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C60BD2A
+P 1500 4000
+F 0 "#PWR?" H 1500 3850 50  0001 C CNN
+F 1 "+5V" H 1500 4150 50  0000 C CNN
+F 2 "" H 1500 4000 50  0001 C CNN
+F 3 "" H 1500 4000 50  0001 C CNN
+	1    1500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2000 4500 2150
+$Comp
+L Scales_Library:LCD_20x2 J?
+U 1 1 5C60D353
+P 1800 3050
+F 0 "J?" H 2050 2300 50  0000 C CNN
+F 1 "LCD_20x2" V 1800 3050 50  0000 C CNN
+F 2 "" H 1850 3400 50  0001 C CNN
+F 3 "" H 1850 3400 50  0001 C CNN
+	1    1800 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5C60D478
+P 1100 3600
+F 0 "RV?" H 1030 3646 50  0000 R CNN
+F 1 "10K" H 1030 3555 50  0000 R CNN
+F 2 "" H 1100 3600 50  0001 C CNN
+F 3 "~" H 1100 3600 50  0001 C CNN
+	1    1100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 5C617224
+P 2350 4850
+F 0 "U?" H 2350 5424 50  0000 C CNN
+F 1 "ULN2003" H 2350 5515 50  0000 C CNN
+F 2 "" H 2400 4300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 2450 4650 50  0001 C CNN
+	1    2350 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6172AC
+P 2550 4050
+F 0 "#PWR?" H 2550 3800 50  0001 C CNN
+F 1 "GND" H 2555 3877 50  0000 C CNN
+F 2 "" H 2550 4050 50  0001 C CNN
+F 3 "" H 2550 4050 50  0001 C CNN
+	1    2550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4050 2550 3950
+Wire Wire Line
+	2350 3950 2350 4250
+Wire Wire Line
+	1500 4000 1500 4100
+Wire Wire Line
+	1500 4100 1800 4100
+Wire Wire Line
+	1800 4100 1800 3800
+Wire Wire Line
+	1250 3600 1400 3600
+Wire Wire Line
+	1950 5050 1950 4950
+Wire Wire Line
+	750  4850 750  2650
+Wire Wire Line
+	750  2650 1400 2650
+Wire Wire Line
+	750  4850 1950 4850
+Wire Wire Line
+	2550 3950 2350 3950
+Wire Wire Line
+	1950 4950 1950 4850
+Connection ~ 1950 4950
+Connection ~ 1950 4850
+Wire Wire Line
+	1400 2000 1400 1950
+Wire Wire Line
+	1400 1950 1800 1950
+Wire Wire Line
+	1800 1950 1800 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5C618E57
+P 1100 3850
+F 0 "#PWR?" H 1100 3600 50  0001 C CNN
+F 1 "GND" H 1105 3677 50  0000 C CNN
+F 2 "" H 1100 3850 50  0001 C CNN
+F 3 "" H 1100 3850 50  0001 C CNN
+	1    1100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C618EBB
+P 1100 3150
+F 0 "#PWR?" H 1100 3000 50  0001 C CNN
+F 1 "+5V" H 1115 3323 50  0000 C CNN
+F 2 "" H 1100 3150 50  0001 C CNN
+F 3 "" H 1100 3150 50  0001 C CNN
+	1    1100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3150 1100 3250
+Wire Wire Line
+	1100 3850 1100 3750
+$Comp
+L Device:Buzzer BZ?
+U 1 1 5C61958F
+P 1200 4400
+F 0 "BZ?" V 1252 4213 50  0000 R CNN
+F 1 "Buzzer" V 1161 4213 50  0000 R CNN
+F 2 "" V 1175 4500 50  0001 C CNN
+F 3 "~" V 1175 4500 50  0001 C CNN
+	1    1200 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 4500 1300 4750
+Wire Wire Line
+	1300 4750 1950 4750
+Wire Wire Line
+	1950 4750 1950 4650
+Connection ~ 1950 4750
+Wire Wire Line
+	2750 5050 2750 4950
+Wire Wire Line
+	2750 4950 2750 4850
+Connection ~ 2750 4950
+Wire Wire Line
+	2750 4750 2750 4650
+Wire Wire Line
+	1500 4100 950  4100
+Wire Wire Line
+	950  4100 950  4600
+Wire Wire Line
+	950  4600 1100 4600
+Wire Wire Line
+	1100 4600 1100 4500
+Connection ~ 1500 4100
+Wire Wire Line
+	1400 2750 1300 2750
+Wire Wire Line
+	1300 2750 1300 3250
+Wire Wire Line
+	1300 3250 1100 3250
+Connection ~ 1100 3250
+Wire Wire Line
+	1100 3250 1100 3450
+$EndSCHEMATC
