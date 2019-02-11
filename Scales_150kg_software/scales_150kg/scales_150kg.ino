@@ -1,6 +1,11 @@
-//----------------------------------------------------------------------------------------------------
+//------------------------------------------
+//------Project started --------------------
 //------- version 0.1 ----------------------
-//--------2018-09-15--------------------------
+//--------2018-09-15------------------------
+//==========================================
+//-------- version 0.2 ---------------------
+//---------2019-02-11-----------------------
+//==========================================
 
 #include <LiquidCrystal.h>
 #include "BigNumbers.h"                    //modified BigNumbers library
@@ -9,7 +14,7 @@
 
 #define SCALES_FACTOR -12500.0
 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);     // initialize the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);     // initialize the interface pins [ LiquidCrystal(rs, enable, d4, d5, d6, d7)]
 
 BigNumbers bigNum(&lcd);                   // construct BigNumbers object, passing to it the name of our LCD object
 
